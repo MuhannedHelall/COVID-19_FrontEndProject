@@ -1,0 +1,1803 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Corona Virus</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .div {
+            min-height: 680px;
+            overflow: hidden;
+        }
+
+        .backgroundImage {
+            background-image: url("assets/imgs/shape-a.png");
+            background-size: 110%;
+        }
+
+        .img-sym {
+            position: absolute;
+            top: -40px;
+            right: 15px;
+            box-shadow: 0px 0px 15px #000;
+        }
+
+        .active {
+            color: #0b5ed7 !important;
+            font-weight: bolder;
+            border-bottom: 3px solid #0b5ed7;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Here is the Navbar beginning -->
+    <nav id="navScrollSpy" class="navbar navbar-expand-lg sticky-top bg-white">
+        <div class="container px-5">
+            <a class="navbar-brand fw-bold fs-1" href="index.html">
+                <span style="margin-right: -7px;">C</span>
+                <img src="assets/imgs/TitleIcon.png" class="mb-2" style="width: 40px;">
+                <span style="margin-left: -7px;">VID-19</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 fw-bold" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 fw-bold " href="#about">About Corona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 fw-bold" href="#sym">Symptoms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 fw-bold" href="#prev">Prevention</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 fw-bold" href="#treat">Treatment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 fw-bold" href="#faq">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 fw-bold" href="#news">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary rounded-pill px-3 py-2 mx-3" type="button"
+                            onclick="location.href='#dos'">Dos & Don'ts</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Here is the Navbar end -->
+
+    <div data-bs-spy="scroll" data-bs-target="#navScrollSpy" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example rounded-2" tabindex="0">
+        <!-- Here is the Header beginning -->
+        <header id="home" class="div pb-5 backgroundImage bg-light">
+            <div class="container">
+                <div class="row mt-3">
+                    <div class="col-xl-6 col-12">
+                        <div class="container">
+                            <div class="row mt-5 text-center">
+                                <div class="col">
+                                    <h1 class="fw-bold" style="font-size:65pt;">CORONA</h1>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-xl-12 col-lg-6 col-12">
+                                            <h4 class="fw-bold" style="font-size:30pt; color: #f00;">COVID-19</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-12 col-lg-6 col-12">
+                                            <h4 class="fw-bold" style="font-size:40pt;">VIRUS</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col justify-content-start">
+                                    <p style="font-size: 14pt; text-align: justify;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eaque voluptates
+                                        dicta in optio inventore temporibus quos placeat dolorem reiciendis vel sint
+                                        perferendis dolores aliquam, aut deleniti sunt asperiores beatae, tempora rerum
+                                        veritatis maxime. Magni?
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-6 col-12 my-md-0 my-3 d-flex justify-content-center">
+                                    <button type="button"
+                                        class="btn btn-primary rounded-pill px-xl-5 px-lg-3 px-5 py-2">
+                                        <span>How to protect</span>
+                                        <i class="bi bi-shield-shaded mx-2"></i>
+                                    </button>
+                                </div>
+                                <div class="col-md-6 col-12 my-md-0 my-3 d-flex justify-content-center">
+                                    <a href="#" class="text-decoration-none p-xl-2 p-lg-0 p-2 fs-5 fw-bold">
+                                        <span>About COVID-19</span>
+                                        <i class="bi bi-arrow-right text-primary mx-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col-sm-4 col-12 text-center">
+                                    <span class="fs-5 d-block">Lorem, ipsum.</span>
+                                    <span class="fw-bold fs-3">216,512,301</span>
+                                </div>
+                                <div class="col-sm-4 col-12 text-center">
+                                    <span class="fs-5 d-block">Lorem, ipsum.</span>
+                                    <span class="fw-bold fs-3">216,512,301</span>
+                                </div>
+                                <div class="col-sm-4 col-12 text-center">
+                                    <span class="fs-5 d-block">Lorem, ipsum.</span>
+                                    <span class="fw-bold fs-3">216,512,301</span>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col">
+                                    <p class="opacity-75">
+                                        " Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Officia,ut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-12 d-xl-flex justify-content-start d-none">
+                        <img src="assets/imgs/header-a.png" alt="here is a photo!" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Here is the Header end -->
+
+
+        <!-- Here is the AboutCorona beginning -->
+        <section id="about" class="div bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-12 p-5 my-xl-5" style="text-align: justify;">
+                        <h4>ABOUT THE DISEASE</h4>
+                        <h1 class="fs-2">CORONAVIRUS (COVID-19)</h1>
+                        <div class="fs-5 py-3">
+                            <span class="fw-bold">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nemo nesciunt?
+                            </span>
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem.
+                            </span>
+                        </div>
+                        <p class="py-1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ab ut a praesentium
+                            perspiciatis
+                            sint magnam veniam! Placeat, molestiae? Velit molestiae necessitatibus magni impedit
+                            repellendus
+                            veritatis quod quisquam facilis quasi!
+                        </p>
+                        <p class="py-1">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos ipsum dolores, deleniti
+                            voluptatem
+                            doloremque harum corporis rerum quam magnam fugiat iusto esse ea nihil. Mollitia praesentium
+                            saepe dolorum enim numquam accusantium fuga modi laudantium reprehenderit?
+                        </p>
+                    </div>
+                    <div class="col-xl-6 col-12 p-5 my-xl-5 d-flex justify-content-center">
+                        <ul class="list-group w-75">
+                            <li class="list-group-item fw-bold fs-4 p-3 text-center">
+                                What you need to know
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                                <a href="#about" class="text-decoration-none d-flex justify-content-between">
+                                    <span class="text-primary fs-5">ipsum dolor sit amet.</span>
+                                    <i class="bi bi-arrow-right-circle-fill text-primary fs-4 mx-3"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                                <a href="#spread" class="text-decoration-none d-flex justify-content-between">
+                                    <span class="text-primary fs-5">ipsum dolor sit amet.</span>
+                                    <i class="bi bi-arrow-right-circle-fill text-primary fs-4 mx-3"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                                <a href="#" class="text-decoration-none d-flex justify-content-between">
+                                    <span class="text-primary fs-5">ipsum dolor sit amet.</span>
+                                    <i class="bi bi-arrow-right-circle-fill text-primary fs-4 mx-3"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                                <a href="#" class="text-decoration-none d-flex justify-content-between">
+                                    <span class="text-primary fs-5">ipsum dolor sit amet.</span>
+                                    <i class="bi bi-arrow-right-circle-fill text-primary fs-4 mx-3"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                                <a href="#" class="text-decoration-none d-flex justify-content-between">
+                                    <span class="text-primary fs-5">ipsum dolor sit amet.</span>
+                                    <i class="bi bi-arrow-right-circle-fill text-primary fs-4 mx-3"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                                <a href="#" class="text-decoration-none d-flex justify-content-between">
+                                    <span class="text-primary fs-5">ipsum dolor sit amet.</span>
+                                    <i class="bi bi-arrow-right-circle-fill text-primary fs-4 mx-3"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Here is the AboutCorona end -->
+
+
+        <!-- Here is the Spread beginning -->
+        <section id="spread" class="div bg-light">
+            <div class="row my-5">
+                <div class="col text-center">
+                    <h4 class="text-primary fw-bold">HOW CORONAVIRUS IS SPREAD</h4>
+                    <h1 class="fw-bold">TRANSMISSION OF COVID-19</h1>
+                    <p class="w-50 d-inline-block my-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, optio! Voluptates, atque
+                        harum
+                        velit
+                        expedita laborum dolorum provident aliquid quos? Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container my-5">
+                <div class="row mb-5">
+                    <div class="col-md-4 col-12 my-md-0 my-2 d-flex justify-content-center">
+                        <div class="card" style="width: 20rem;">
+                            <img src="assets/imgs/spread-a.png"
+                                class="card-img-top border-bottom border-5 border-primary" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-text text-primary fw-bold">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of
+                                    the card's content. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor,
+                                    soluta?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 my-md-0 my-2 d-flex justify-content-center">
+                        <div class="card" style="width: 20rem;">
+                            <img src="assets/imgs/spread-b.png"
+                                class="card-img-top border-bottom border-5 border-primary" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-text text-primary fw-bold">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of
+                                    the card's content. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor,
+                                    soluta?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 my-md-0 my-2 d-flex justify-content-center">
+                        <div class="card" style="width: 20rem;">
+                            <img src="assets/imgs/spread-c.png"
+                                class="card-img-top border-bottom border-5 border-primary" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-text text-primary fw-bold">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of
+                                    the card's content. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor,
+                                    soluta?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary rounded-pill">
+                        <i class="bi bi-question-circle"></i>
+                        <span class="fw-bold mx-2">Have a question about spreading?</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Here is the Spread end -->
+
+
+        <!-- Here is the Symptoms beginning -->
+        <section id="sym" class="div bg-white">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col text-center">
+                        <h4 class="text-primary fw-bold">WHAT ARE THE SYMPTOMS OF COVID-19?</h4>
+                        <h1 class="fw-bold">SYMPTOMS OF CORONAVIRUS</h1>
+                        <p class="w-75 d-inline-block my-4">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam expedita facere placeat.
+                            Odit
+                            mollitia officia doloribus quos error dicta rem molestias ab sint. Ducimus non vel molestiae
+                            error harum, nulla iure magni accusamus voluptates totam consequatur quaerat at officia
+                            velit
+                            doloremque, ullam iusto cumque ipsam.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row py-3">
+                    <div class="col-md-4 col-12 my-md-0 my-3 d-flex justify-content-center">
+                        <div class="card shadow" style="width: 20rem;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title text-primary">Fever</h5>
+                                    <img src="assets/imgs/symptom-a.png" class="rounded-circle w-25 img-sym">
+                                </div>
+                                <span class="card-subtitle mb-2 fw-bold">High Fever</span>
+                                <span class="card-text">
+                                    - Some quick example text to build on the card title and make up the bulk
+                                    of the card's content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Non, sint? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, libero!
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 my-md-0 my-3 d-flex justify-content-center">
+                        <div class="card shadow" style="width: 20rem;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title text-primary">Cough</h5>
+                                    <img src="assets/imgs/symptom-b.png" class="rounded-circle w-25 img-sym">
+                                </div>
+                                <span class="card-subtitle mb-2 fw-bold">Continuous Cough</span>
+                                <span class="card-text">
+                                    - Some quick example text to build on the card title and make up the bulk
+                                    of the card's content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Non, sint? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, libero!
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 my-md-0 my-3 d-flex justify-content-center">
+                        <div class="card shadow" style="width: 20rem;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title text-primary">Shortness of breath</h5>
+                                    <img src="assets/imgs/symptom-c.png" class="rounded-circle w-25 img-sym">
+                                </div>
+                                <span class="card-subtitle mb-2 fw-bold">Difficulty Breathing</span>
+                                <span class="card-text">
+                                    - Some quick example text to build on the card title and make up the bulk
+                                    of the card's content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Non, sint? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, libero!
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-5 pt-md-5">
+                    <div class="col-lg-8 col-12 d-flex justify-content-center" style="text-align: justify;">
+                        <i class="bi bi-exclamation-triangle-fill text-primary display-1 mx-3"></i>
+                        <div class="w-75">
+                            <span class="text-primary fw-bold">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing.</span>
+                            <span class="fst-italic">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat sapiente
+                                perferendis repellat eaque! Architecto excepturi porro nostrum dolores laudantium
+                                eligendi iusto in id quisquam? Est, dolore fuga! Nihil, blanditiis qui.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary rounded-pill px-4 mt-lg-3 mt-5 h-50">
+                            <i class="bi bi-question-circle"></i>
+                            <span class="fw-bold mx-2">Have a question? Find an answer</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Here is the Symptoms end -->
+
+
+        <!-- Here is the Prevention beginning -->
+        <section id="prev" class="div bg-light">
+            <div class="container px-5">
+                <div class="row mt-5">
+                    <div class="col text-center">
+                        <h4 class="text-primary fw-bold">HOW TO PROTECT YOURSELF?</h4>
+                        <h1 class="fw-bold">PREVENTION & ADVICE</h1>
+                        <p class="w-75 d-inline-block my-4">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam expedita facere placeat.
+                            Odit
+                            mollitia officia doloribus quos error
+                            <span class="fw-bold">
+                                dicta rem molestias ab sint. Ducimus non vel molestiaeerror harum, nulla iure magni
+                                accusamus voluptates totam consequatur
+                            </span>
+                            quaerat at officia velit doloremque, ullam iusto cumque ipsam.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row my-lg-0 my-5">
+                        <div class="col-lg-3 col-md-6 col-12 text-center">
+                            <img src="assets/imgs/advice-a.png" class="rounded-circle w-50 my-2" />
+                            <h6 class="text-center">Lorem ipsum dolor sit.</h6>
+                            <p class="fs-6 text-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit laudantium
+                                voluptas
+                                nesciunt nihil enim. Debitis doloribus voluptatibus harum ullam ut. Lorem ipsum,
+                                dolor
+                                sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 text-center">
+                            <img src="assets/imgs/advice-b.png" class="rounded-circle w-50 my-2" />
+                            <h6 class="text-center">Lorem, ipsum dolor.</h6>
+                            <p class="fs-6 text-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit laudantium
+                                voluptas
+                                nesciunt nihil enim. Debitis doloribus voluptatibus harum ullam ut. Lorem ipsum,
+                                dolor
+                                sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 text-center">
+                            <img src="assets/imgs/advice-c.png" class="rounded-circle w-50 my-2" />
+                            <h6 class="text-center">Lorem, ipsum dolor.</h6>
+                            <p class="fs-6 text-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit laudantium
+                                voluptas
+                                nesciunt nihil enim. Debitis doloribus voluptatibus harum ullam ut. Lorem ipsum,
+                                dolor
+                                sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 text-center">
+                            <img src="assets/imgs/advice-d.png" class="rounded-circle w-50 my-2" />
+                            <h6 class="text-center">Lorem, ipsum dolor.</h6>
+                            <p class="fs-6 text-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit laudantium
+                                voluptas
+                                nesciunt nihil enim. Debitis doloribus voluptatibus harum ullam ut. Lorem ipsum,
+                                dolor
+                                sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-5 py-lg-5">
+                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end justify-content-center my-lg-0 my-2">
+                        <button type="button" class="btn btn-primary rounded-pill px-5 py-2 mx-5">
+                            <span>Check how you wash hands</span>
+                            <i class="bi bi-arrow-right mx-1"></i>
+                        </button>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex justify-content-lg-start justify-content-center my-lg-0 my-2">
+                        <a href="#" class="text-decoration-none p-2 fs-5 mx-5 fw-bold">
+                            <span>َQ&A on Coronavirus</span>
+                            <i class="bi bi-arrow-right mx-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Here is the Prevention end -->
+
+
+        <!-- Here is the Treatment beginning -->
+        <section id="treat" class="div bg-light">
+            <div class="container">
+                <div class="row mx-5 my-3 p-4 bg-white">
+                    <div class="col-xl-8 col-12">
+                        <h1 class="pb-3">Take steps to protect others</h1>
+
+                        <div class="py-2 d-flex">
+                            <i class="bi bi-check-circle-fill text-success mx-2"></i>
+                            <div class="d-inline">
+                                <span class="fw-bold">Lorem ipsum dolor sit amet consectetur -</span>
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. A laudantium!</span>
+                            </div>
+                        </div>
+
+                        <div class="py-2 d-flex">
+                            <i class="bi bi-check-circle-fill text-success mx-2"></i>
+                            <div class="d-inline">
+                                <span class="fw-bold">Lorem ipsum dolor sit consectetur -</span>
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio recusandae libero in
+                                    suscipit voluptatibus, eaque qui magni inventore ipsam est a officia!
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="py-2 d-flex">
+                            <i class="bi bi-check-circle-fill text-success mx-2"></i>
+                            <div class="d-inline">
+                                <span class="fw-bold">Lorem ipsum dolor sit amet -</span>
+                                <span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dicta aperiam totam
+                                    aspernatur, impedit culpa quis nam repudiandae maiores modi quibusdam. Deserunt,
+                                    corporis repudiandae dolor in incidunt accusamus minima dolorem!
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="py-2 d-flex">
+                            <i class="bi bi-check-circle-fill text-success mx-2"></i>
+                            <div class="d-inline">
+                                <span class="fw-bold">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit Aperiam -
+                                </span>
+                                <span>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores ipsa nihil
+                                    maxime, aut, totam eligendi atque qui reprehenderit ea tenetur cupiditate! Porro.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="py-2 d-flex">
+                            <i class="bi bi-check-circle-fill text-success mx-2"></i>
+                            <div class="d-inline">
+                                <span class="fw-bold">Lorem ipsum dolor sit -</span>
+                                <span>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia neque
+                                    perferend isvelit!
+                                </span>
+                            </div>
+                        </div>
+                        <div class="py-2 d-flex">
+                            <i class="bi bi-check-circle-fill text-success mx-2"></i>
+                            <div class="d-inline">
+                                <span class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit -</span>
+                                <span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est adipisci quo nostrum
+                                    quasi iste quidem, <a href="#">illo molestiae deleniti.</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="py-2 d-flex">
+                            <i class="bi bi-check-circle-fill text-success mx-2"></i>
+                            <div class="d-inline">
+                                <span class="fw-bold">Lorem ipsum dolor sit -</span>
+                                <span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nisi repellat nam
+                                    blanditiis architecto suscipit provident illo est.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-12 d-none d-xl-flex justify-content-xl-end justify-content-center">
+                        <img src="assets/imgs/steps.png" class="w-75 h-75" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Here is the Treatment end -->
+
+
+        <!-- Here is the Steps beginning -->
+        <section id="steps" class="bg-light pb-xl-5">
+            <div class="container py-5">
+                <div class="row pb-5">
+                    <div class="col text-center">
+                        <h1>Follow steps to wash hands</h1>
+                        <a href="#" class="text-decoration-none fw-bolder">
+                            <span>Why do I need to wash hands </span>
+                            <i class="bi bi-arrow-right mx-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row text-center pb-5">
+                    <div class="col-xl-2 col-md-4 col-6">
+                        <img src="assets/imgs/hand-a.png" class="w-75 mb-3 rounded-circle">
+                        <h6 class="fw-bold text-center w-50 d-inline-block">Lorem, ipsum dolor.</h6>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6">
+                        <img src="assets/imgs/hand-b.png" class="w-75 mb-3 rounded-circle">
+                        <h6 class="fw-bold text-center w-50 d-inline-block">Lorem, ipsum dolor.</h6>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6">
+                        <img src="assets/imgs/hand-c.png" class="w-75 mb-3 rounded-circle">
+                        <h6 class="fw-bold text-center w-50 d-inline-block">Lorem, ipsum dolor.</h6>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6">
+                        <img src="assets/imgs/hand-d.png" class="w-75 mb-3 rounded-circle">
+                        <h6 class="fw-bold text-center w-50 d-inline-block">Lorem, ipsum dolor.</h6>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6">
+                        <img src="assets/imgs/hand-e.png" class="w-75 mb-3 rounded-circle">
+                        <h6 class="fw-bold text-center w-50 d-inline-block">Lorem, ipsum dolor.</h6>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6">
+                        <img src="assets/imgs/hand-f.png" class="w-75 mb-3 rounded-circle">
+                        <h6 class="fw-bold text-center w-50 d-inline-block">Lorem, ipsum dolor.</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Here is the Steps end -->
+
+
+        <!-- Here is the Treatment beginning -->
+        <section id="treatment" class="div backgroundImage text-white" style="background-color: #2766BB;">
+            <div class="container">
+                <div class="row my-3">
+                    <div class="col-lg-7 col-12 px-5 pt-5 py-lg-5">
+                        <h2 class="fw-bold" style="color: #7EF2F2;">BE CAREFULL & STAY SAFE</h2>
+                        <h1 class="fw-bold mb-4">TREATMENT FOR CORONAVIRUS</h1>
+                        <p>
+                            <span class="fw-bold">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ducimus ab vel
+                                dolor
+                                expedita inventore?
+                            </span>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad commodi dolor atque aperiam
+                            voluptate asperiores, reiciendis illum? Veniam consequatur quam aut excepturi ad
+                            nesciunt
+                            corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae
+                            impedit
+                            dolor corporis dignissimos eveniet.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iure quibusdam iusto. Rem
+                            sapiente alias nulla cumque rerum quae assumenda quia repellat omnis exercitationem
+                            temporibus veniam, ut eaque atque quisquam amet nemo quod laudantium tenetur. Lorem
+                            ipsum,
+                            dolor sit amet consectetur adipisicing elit. Distinctio placeat explicabo perferendis
+                            accusamus doloremque delectus?
+                        </p>
+                    </div>
+                    <div class="col-lg-5 col-12 d-flex justify-content-center">
+                        <div class="card my-5" style="width: 23rem; background-color: #1B47A1;">
+                            <div class="card-body p-5">
+                                <h5 class="card-title fw-bold">Self care</h5>
+                                <h6 class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Vitae
+                                    eveniet nostrum earum excepturi saepe vero!</h6>
+                                <div class="py-2">
+                                    <span class="d-flex">
+                                        <i class="bi bi-arrow-right mx-1"></i>
+                                        <span>Rest and sleep</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <i class="bi bi-arrow-right mx-1"></i>
+                                        <span>Keep warm</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <i class="bi bi-arrow-right mx-1"></i>
+                                        <span>Drink plenty of liquids</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <i class="bi bi-arrow-right mx-1"></i>
+                                        <span>Use a room humidifier or take a hot shower to help ease a
+                                            sore throat and cough</span>
+                                    </span>
+                                </div>
+                                <h5 class="card-title fw-bold">Medical Treatment</h5>
+                                <h6 class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Sapiente
+                                    sed aliquam ipsum, maiores consequatur officia. Error impedit animi tempora
+                                    cupiditate cumque expedita sint.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Here is the Treatment end -->
+
+
+        <!-- Here is the DOS&DON'TS beginning -->
+        <section id="dos" class="div bg-light">
+            <div class="container py-5">
+                <div class="row py-lg-5">
+                    <div class="col text-center">
+                        <h4 class="text-primary fw-bold">DO'S & DON'TS</h4>
+                        <h1 class="fw-bold">PROTECT YOURSELF</h1>
+                        <p class="w-75 d-inline-block">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus voluptatum necessitatibus
+                            consequuntur dolores, nisi quidem quae a voluptatem, aspernatur sequi, quia ab. Fugiat
+                            voluptate dolores enim, exercitationem veritatis possimus quam nisi explicabo pariatur
+                            architecto consectetur sapiente temporibus nemo beatae alias.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row pb-lg-5">
+                    <div class="col-lg-4 d-lg-block">
+                        <div class="d-flex align-items-center justify-content-center my-5">
+                            <h6 class="text-primary fw-bold" style="margin-right:-25px;">Lorem, ipsum dolor.</h6>
+                            <div class="text-center" style="position: relative;">
+                                <i class="bi bi-x-circle-fill text-danger"
+                                    style="position: absolute; left: 50%; transform: translateX(-50%);"></i>
+                                <img src="assets/imgs/donts-a.png"
+                                    class="rounded-circle w-50 bg-white border border-3 border-danger">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center my-5">
+                            <h6 class="text-primary fw-bold" style="margin-right:-25px;">Lorem, ipsum dolor.</h6>
+                            <div class="text-center" style="position: relative;">
+                                <i class="bi bi-x-circle-fill text-danger"
+                                    style="position: absolute; left: 50%; transform: translateX(-50%);"></i>
+                                <img src="assets/imgs/donts-b.png"
+                                    class="rounded-circle w-50 bg-white border border-3 border-danger">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center my-5">
+                            <h6 class="text-primary fw-bold" style="margin-right:-25px;">Lorem, ipsum dolor.</h6>
+                            <div class="text-center" style="position: relative;">
+                                <i class="bi bi-x-circle-fill text-danger"
+                                    style="position: absolute; left: 50%; transform: translateX(-50%);"></i>
+                                <img src="assets/imgs/donts-c.png"
+                                    class="rounded-circle w-50 bg-white border border-3 border-danger">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 d-lg-block d-none">
+                        <img src="assets/imgs/protect.png" class="w-100 h-100 my-4" />
+                    </div>
+
+                    <div class="col-lg-4 d-lg-block">
+                        <div class="d-flex align-items-center justify-content-center my-5">
+                            <div class="text-center" style="position: relative;">
+                                <i class="bi bi-check-circle-fill text-success"
+                                    style="position: absolute; left:50%; transform: translateX(-50%);"></i>
+                                <img src="assets/imgs/dos-a.png"
+                                    class="w-50 rounded-circle bg-white border border-3 border-success">
+                            </div>
+                            <h6 class="text-primary fw-bold" style="margin-left:-25px;">Lorem, ipsum dolor.</h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center my-5">
+                            <div class="text-center" style="position: relative;">
+                                <i class="bi bi-check-circle-fill text-success"
+                                    style="position: absolute; left:50%; transform: translateX(-50%);"></i>
+                                <img src="assets/imgs/dos-b.png"
+                                    class="w-50 rounded-circle bg-white border border-3 border-success">
+                            </div>
+                            <h6 class="text-primary fw-bold" style="margin-left:-25px;">Lorem, ipsum dolor.</h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center my-5">
+                            <div class="text-center" style="position: relative;">
+                                <i class="bi bi-check-circle-fill text-success"
+                                    style="position: absolute; left:50%; transform: translateX(-50%);"></i>
+                                <img src="assets/imgs/dos-c.png"
+                                    class="w-50 rounded-circle bg-white border border-3 border-success">
+                            </div>
+                            <h6 class="text-primary fw-bold" style="margin-left:-25px;">Lorem, ipsum dolor.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Here is the DOS&DON'TS end -->
+
+
+        <!-- Here is the FAQS beginning -->
+        <section id="faq" class="div bg-white">
+            <div class="container my-5 w-75">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4 class="text-primary fw-bold">FREQUENTLY ASKED QUESTIONS</h4>
+                        <h1 class="fw-bold">COMMON QUESTIONS & ANSWERS</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-12 pb-lg-0 pb-5">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-action py-3 
+                                my-1 d-flex justify-content-between border border-2" data-toggle="collapse"
+                                data-target="#section1" aria-expanded="false" aria-controls="section1">
+                                Coronavirus Disease 2019 Basics
+                                <i class="bi bi-caret-right-fill"></i>
+                            </li>
+                            <li class="list-group-item list-group-item-action py-3 
+                                my-1 d-flex justify-content-between border border-2" data-toggle="collapse"
+                                data-target="#section2" aria-expanded="false" aria-controls="section2">
+                                How It Spreads
+                                <i class="bi bi-caret-right-fill"></i>
+                            </li>
+                            <li class="list-group-item list-group-item-action py-3 
+                                my-1 d-flex justify-content-between border border-2" data-toggle="collapse"
+                                data-target="#section3" aria-expanded="false" aria-controls="section3">
+                                How to Protect Yourself
+                                <i class="bi bi-caret-right-fill"></i>
+                            </li>
+
+                            <li class="list-group-item list-group-item-action py-3 
+                                my-1 d-flex justify-content-between border border-2" data-toggle="collapse"
+                                data-target="#section4" aria-expanded="false" aria-controls="section4">
+                                Symptoms & Testing
+                                <i class="bi bi-caret-right-fill"></i>
+                            </li>
+                            <li class="list-group-item list-group-item-action py-3 
+                                my-1 d-flex justify-content-between border border-2" data-toggle="collapse"
+                                data-target="#section5" aria-expanded="false" aria-controls="section5">
+                                Outbreak in Your Community
+                                <i class="bi bi-caret-right-fill"></i>
+                            </li>
+                            <li class="list-group-item list-group-item-action py-3 
+                                my-1 d-flex justify-content-between border border-2" data-toggle="collapse"
+                                data-target="#section6" aria-expanded="false" aria-controls="section6">
+                                How to Protect Yourself
+                                <i class="bi bi-caret-right-fill"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div id="accordion">
+                            <div id="section1" class="collapse show" data-parent="#accordion">
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section1-collapse1" aria-expanded="false"
+                                        aria-controls="section1-collapse1" style="cursor:pointer;">
+                                        <button class="btn">
+                                            What should I do if there is an outbreak in my community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+
+                                    <div id="section1-collapse1" class="collapse show" data-parent="#section1">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section1-collapse2" aria-expanded="false"
+                                        aria-controls="section1-collapse2" style="cursor:pointer;">
+                                        <button class="btn">
+                                            How do I prepare my children in case of COVID-19 outbreak in our community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+
+                                    <div id="section1-collapse2" class="collapse" data-parent="#section1">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section1-collapse3" aria-expanded="false"
+                                        aria-controls="section1-collapse3" style="cursor:pointer;">
+                                        <button class="btn">
+                                            What steps should parents take to protect children during a community
+                                            outbreak?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+
+                                    <div id="section1-collapse3" class="collapse" data-parent="#section1">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section1-collapse4" aria-expanded="false"
+                                        aria-controls="section1-collapse4" style="cursor:pointer;">
+                                        <button class="btn">
+                                            Will schools be dismissed if there is an outbreak in my community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+
+                                    <div id="section1-collapse4" class="collapse" data-parent="#section1">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="section2" class="collapse" data-parent="#accordion">
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section2-collapse1" aria-expanded="false"
+                                        aria-controls="section2-collapse1" style="cursor:pointer;">
+                                        <button class="btn">
+                                            What should I do if there is an outbreak in my community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section2-collapse1" class="collapse show" data-parent="#section2">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section2-collapse2" aria-expanded="false"
+                                        aria-controls="section2-collapse2" style="cursor:pointer;">
+                                        <button class="btn">
+                                            How do I prepare my children in case of COVID-19 outbreak in our community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section2-collapse2" class="collapse" data-parent="#section2">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section2-collapse3" aria-expanded="false"
+                                        aria-controls="section2-collapse3" style="cursor:pointer;">
+                                        <button class="btn">
+                                            What steps should parents take to protect children during a community
+                                            outbreak?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section2-collapse3" class="collapse" data-parent="#section2">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section2-collapse4" aria-expanded="false"
+                                        aria-controls="section2-collapse4" style="cursor:pointer;">
+                                        <button class="btn">
+                                            Will schools be dismissed if there is an outbreak in my community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section2-collapse4" class="collapse" data-parent="#section2">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section2-collapse5" aria-expanded="false"
+                                        aria-controls="section2-collapse5" style="cursor:pointer;">
+                                        <button class="btn">
+                                            How do I prepare my children in case of COVID-19 outbreak in our community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section2-collapse5" class="collapse" data-parent="#section2">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="section3" class="collapse" data-parent="#accordion">
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section3-collapse1" aria-expanded="false"
+                                        aria-controls="section3-collapse1" style="cursor:pointer;">
+                                        <button class="btn">
+                                            What should I do if there is an outbreak in my community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section3-collapse1" class="collapse show" data-parent="#section3">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section3-collapse2" aria-expanded="false"
+                                        aria-controls="section3-collapse2" style="cursor:pointer;">
+                                        <button class="btn">
+                                            How do I prepare my children in case of COVID-19 outbreak in our community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section3-collapse2" class="collapse" data-parent="#section3">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section3-collapse3" aria-expanded="false"
+                                        aria-controls="section3-collapse3" style="cursor:pointer;">
+                                        <button class="btn">
+                                            What steps should parents take to protect children during a community
+                                            outbreak?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section3-collapse3" class="collapse" data-parent="#section3">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="section4" class="collapse" data-parent="#accordion">
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section4-collapse1" aria-expanded="false"
+                                        aria-controls="section4-collapse1" style="cursor:pointer;">
+                                        <button class="btn">
+                                            What should I do if there is an outbreak in my community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section4-collapse1" class="collapse show" data-parent="#section4">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section4-collapse2" aria-expanded="false"
+                                        aria-controls="section4-collapse2" style="cursor:pointer;">
+                                        <button class="btn">
+                                            How do I prepare my children in case of COVID-19 outbreak in our community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section4-collapse2" class="collapse" data-parent="#section4">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section4-collapse3" aria-expanded="false"
+                                        aria-controls="section4-collapse3" style="cursor:pointer;">
+                                        <button class="btn">
+                                            What steps should parents take to protect children during a community
+                                            outbreak?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section4-collapse3" class="collapse" data-parent="#section4">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section4-collapse4" aria-expanded="false"
+                                        aria-controls="section4-collapse4" style="cursor:pointer;">
+                                        <button class="btn">
+                                            Will schools be dismissed if there is an outbreak in my community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section4-collapse4" class="collapse" data-parent="#section4">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="section5" class="collapse" data-parent="#accordion">
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section5-collapse1" aria-expanded="false"
+                                        aria-controls="section5-collapse1" style="cursor:pointer;">
+                                        <button class="btn">
+                                            What should I do if there is an outbreak in my community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section5-collapse1" class="collapse show" data-parent="#section5">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section5-collapse2" aria-expanded="false"
+                                        aria-controls="section5-collapse2" style="cursor:pointer;">
+                                        <button class="btn">
+                                            How do I prepare my children in case of COVID-19 outbreak in our community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section5-collapse2" class="collapse" data-parent="#section5">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="section6" class="collapse" data-parent="#accordion">
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section6-collapse1" aria-expanded="false"
+                                        aria-controls="section6-collapse1" style="cursor:pointer;">
+                                        <button class="btn">
+                                            What should I do if there is an outbreak in my community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section6-collapse1" class="collapse show" data-parent="#section6">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section6-collapse2" aria-expanded="false"
+                                        aria-controls="section6-collapse2" style="cursor:pointer;">
+                                        <button class="btn">
+                                            How do I prepare my children in case of COVID-19 outbreak in our community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section6-collapse2" class="collapse" data-parent="#section6">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section6-collapse3" aria-expanded="false"
+                                        aria-controls="section6-collapse3" style="cursor:pointer;">
+                                        <button class="btn">
+                                            What steps should parents take to protect children during a community
+                                            outbreak?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section6-collapse3" class="collapse" data-parent="#section6">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section6-collapse4" aria-expanded="false"
+                                        aria-controls="section6-collapse4" style="cursor:pointer;">
+                                        <button class="btn">
+                                            Will schools be dismissed if there is an outbreak in my community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section6-collapse4" class="collapse" data-parent="#section6">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between" data-toggle="collapse"
+                                        data-target="#section6-collapse5" aria-expanded="false"
+                                        aria-controls="section6-collapse5" style="cursor:pointer;">
+                                        <button class="btn">
+                                            How do I prepare my children in case of COVID-19 outbreak in our community?
+                                        </button>
+                                        <i class="bi bi-plus-circle fs-4"></i>
+                                    </div>
+                                    <div id="section6-collapse5" class="collapse" data-parent="#section6">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch
+                                            et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Here is the FAQS end -->
+
+
+        <!-- Here is the News beginning -->
+        <section id="news" class="div bg-light">
+            <div class="container">
+                <div class="text-center py-5">
+                    <h4 class="text-primary fw-bold">RECENT FROM BLOGS</h4>
+                    <h1 class="fw-bold">LATEST UPDATES</h1>
+                </div>
+                <div class="row pb-5">
+                    <div class="col-md-4 col-12 d-flex justify-content-md-end justify-content-center py-md-0 py-3">
+                        <div class="card" style="width: 20rem;">
+                            <img src="assets/imgs/blog-a.jpg" class="card-img-top p-3 rounded-5" />
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk
+                                    of the card's content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Officia, tempora?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex justify-content-md-center justify-content-center py-md-0 py-3">
+                        <div class="card" style="width: 20rem;">
+                            <img src="assets/imgs/blog-b.jpg" class="card-img-top p-3 rounded-5" />
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk
+                                    of the card's content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Officia, tempora?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex justify-content-md-start justify-content-center py-md-0 py-3">
+                        <div class="card" style="width: 20rem;">
+                            <img src="assets/imgs/blog-c.jpg" class="card-img-top p-3 rounded-5" />
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk
+                                    of the card's content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Officia, tempora?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Here is the News end -->
+
+        <!-- Here is the Footer beginning -->
+        <footer id="footer" class="div backgroundImage" style="background-color: #151c2e;">
+            <div class="container w-75 px-5" style="color:#a5aebd;">
+                <div class="row py-2 mt-5">
+                    <div class="col">
+                        <a class="text-decoration-none fw-bold fs-1" href="index.html">
+                            <span class="text-white" style="margin-right: -7px;">C</span>
+                            <img src="assets/imgs/TitleIcon.png" class="mb-2" style="width: 40px;">
+                            <span class="text-white" style="margin-left: -7px;">VID</span>
+                            <span class="text-primary" style="margin-left: -10px;">19</span>
+                        </a>
+                        <p class="w-75">
+                            This website is for health information and advice about coronavirus (COVID-19), how to
+                            prevent and protect yourself from disease
+                        </p>
+                        <p class="w-75">
+                            Learn about the government response to coronavirus on GOV.UK
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-12 py-md-0 py-2">
+                        <button type="button" class="btn btn-primary w-100 px-5 py-2">Find Us on Facebook</button>
+                    </div>
+                    <div class="col-md-4 col-12 py-md-0 py-2">
+                        <button type="button" class="btn btn-info w-100 text-white px-5 py-2">Find Us on
+                            Twitter</button>
+                    </div>
+                    <div class="col-md-4 col-12 py-md-0 py-2">
+                        <button type="button" class="btn btn-danger w-100 px-5 py-2">Find Us on Instagram</button>
+                    </div>
+                </div>
+
+                <div class="row pt-5 pb-2">
+                    <div class="col-md-4 col-12 text-center py-md-0 py-2">
+                        <ul>
+                            <h5 class="text-white">QUICK LINK</h5>
+                            <li class="list-group-item py-1"><a href="#" class="text-decoration-none"
+                                    style="color:#a5aebd;">About Corona</a></li>
+                            <li class="list-group-item py-1"><a href="#" class="text-decoration-none"
+                                    style="color:#a5aebd;">Symptoms</a></li>
+                            <li class="list-group-item py-1"><a href="#" class="text-decoration-none"
+                                    style="color:#a5aebd;">Prevention</a></li>
+                            <li class="list-group-item py-1"><a href="#" class="text-decoration-none"
+                                    style="color:#a5aebd;">Repare your Family</a></li>
+                            <li class="list-group-item py-1"><a href="#" class="text-decoration-none"
+                                    style="color:#a5aebd;">FAQS</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-12 text-center py-md-0 py-2">
+                        <ul>
+                            <h5 class="text-white">HELPFULL LINK</h5>
+                            <li class="list-group-item py-1"><a href="#" class="text-decoration-none"
+                                    style="color:#a5aebd;">Healthcare Professionals</a></li>
+                            <li class="list-group-item py-1"><a href="#" class="text-decoration-none"
+                                    style="color:#a5aebd;">Healthcare Facilities</a></li>
+                            <li class="list-group-item py-1"><a href="#" class="text-decoration-none"
+                                    style="color:#a5aebd;">Older Adults & Medical Conditions</a></li>
+                            <li class="list-group-item py-1"><a href="#" class="text-decoration-none"
+                                    style="color:#a5aebd;">Harvard Health</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-12 text-center py-md-0 py-2">
+                        <ul>
+                            <h5 class="text-white">IMPORTANT LINK</h5>
+                            <li class="list-group-item py-1"><a href="#" class="text-decoration-none"
+                                    style="color:#a5aebd;">WHO Website</a></li>
+                            <li class="list-group-item py-1"><a href="#" class="text-decoration-none"
+                                    style="color:#a5aebd;">CDC Website</a></li>
+                            <li class="list-group-item py-1"><a href="#" class="text-decoration-none"
+                                    style="color:#a5aebd;">NHS Website</a></li>
+                            <li class="list-group-item py-1"><a href="#" class="text-decoration-none"
+                                    style="color:#a5aebd;">Protect Yourself</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="row" style="color: #a5aebd;">
+                    <div class="col">
+                        <div class="d-flex justify-content-between py-3">
+                            <div>
+                                <i class="bi bi-c-circle"></i>
+                                <span>
+                                    2022 COVID-19. Template Made by
+                                    <span class="text-white fw-bold">Muhanned Helall</span>
+                                    Thanks To - Mina Karam Choprial -
+                                </span>
+                            </div>
+                            <span>Prvacy Policy</span>
+                        </div>
+                        <p style="font-size: 9pt;" class="mt-2">
+                            Disclaimer: We hope you find the information presented on this website useful This website
+                            is for general information and raise awareness of (2019-CoV) only All the information based
+                            on WHO.NHS and CDC website. Information on our website is meant for awareness. If you have
+                            any doubt please verity from respective site.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Here is the Footer end -->
+    </div>
+
+    <script src="assets/js/js.js"></script>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
