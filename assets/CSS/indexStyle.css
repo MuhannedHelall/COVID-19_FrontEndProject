@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div {
+    min-height: 680px;
+    overflow: hidden;
+}
+
+.backgroundImage {
+    background-image: url("assets/imgs/shape-a.png");
+    background-size: 110%;
+}
+
+.img-sym {
+    position: absolute;
+    top: -40px;
+    right: 15px;
+    box-shadow: 0px 0px 15px #000;
+}
+
+.active {
+    color: #0b5ed7 !important;
+    font-weight: bolder;
+    border-bottom: 3px solid #0b5ed7;
+}
