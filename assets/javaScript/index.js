@@ -19,9 +19,9 @@ function toggleIcon(parent) {
     icons = parent.parentNode.parentNode.querySelectorAll(".icons");
     icons.forEach(icon => {
         icon.classList.add('bi-plus-circle');
-        icons[i].classList.remove('bi-dash-circle-fill');
+        icon.classList.remove('bi-dash-circle-fill');
         if (parent.getAttribute("value") === "plus")
-            icons[i].parentElement.setAttribute("value", "plus");
+            icon.parentElement.setAttribute("value", "plus");
     });
     if (parent.getAttribute("value") === "plus") {
         parent.children[1].classList.remove('bi-plus-circle');
