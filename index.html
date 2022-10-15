@@ -42,7 +42,7 @@
     </style>
 </head>
 
-<body>
+<body onload="loadNumber()">
     <!-- Here is the Navbar beginning -->
     <nav id="navScrollSpy" class="navbar navbar-expand-lg sticky-top bg-white">
         <div class="container px-5">
@@ -142,15 +142,15 @@
                             <div class="row mt-5">
                                 <div class="col-sm-4 col-12 text-center">
                                     <span class="fs-5 d-block">Lorem, ipsum.</span>
-                                    <span class="fw-bold fs-3">216,512,301</span>
+                                    <span class="fw-bold fs-3 loadNumber">765124839</span>
                                 </div>
                                 <div class="col-sm-4 col-12 text-center">
                                     <span class="fs-5 d-block">Lorem, ipsum.</span>
-                                    <span class="fw-bold fs-3">216,512,301</span>
+                                    <span class="fw-bold fs-3 loadNumber">426197358</span>
                                 </div>
                                 <div class="col-sm-4 col-12 text-center">
                                     <span class="fs-5 d-block">Lorem, ipsum.</span>
-                                    <span class="fw-bold fs-3">216,512,301</span>
+                                    <span class="fw-bold fs-3 loadNumber">639512784</span>
                                 </div>
                             </div>
                             <div class="row mt-5">
@@ -863,13 +863,13 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section1-collapse1" aria-expanded="false"
-                                        aria-controls="section1-collapse1" style="cursor:pointer;">
+                                        aria-controls="section1-collapse1" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="minus">
                                         <button class="btn">
                                             What should I do if there is an outbreak in my community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-dash-circle-fill fs-4 icons"></i>
                                     </div>
-
                                     <div id="section1-collapse1" class="collapse show" data-parent="#section1">
                                         <div class="card-body">
                                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -896,13 +896,13 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section1-collapse2" aria-expanded="false"
-                                        aria-controls="section1-collapse2" style="cursor:pointer;">
+                                        aria-controls="section1-collapse2" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             How do I prepare my children in case of COVID-19 outbreak in our community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
-
                                     <div id="section1-collapse2" class="collapse" data-parent="#section1">
                                         <div class="card-body">
                                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -929,14 +929,14 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section1-collapse3" aria-expanded="false"
-                                        aria-controls="section1-collapse3" style="cursor:pointer;">
+                                        aria-controls="section1-collapse3" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             What steps should parents take to protect children during a community
                                             outbreak?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
-
                                     <div id="section1-collapse3" class="collapse" data-parent="#section1">
                                         <div class="card-body">
                                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -963,13 +963,13 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section1-collapse4" aria-expanded="false"
-                                        aria-controls="section1-collapse4" style="cursor:pointer;">
+                                        aria-controls="section1-collapse4" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             Will schools be dismissed if there is an outbreak in my community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
-
                                     <div id="section1-collapse4" class="collapse" data-parent="#section1">
                                         <div class="card-body">
                                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -998,11 +998,12 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section2-collapse1" aria-expanded="false"
-                                        aria-controls="section2-collapse1" style="cursor:pointer;">
+                                        aria-controls="section2-collapse1" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="minus">
                                         <button class="btn">
                                             What should I do if there is an outbreak in my community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-dash-circle-fill fs-4 icons"></i>
                                     </div>
                                     <div id="section2-collapse1" class="collapse show" data-parent="#section2">
                                         <div class="card-body">
@@ -1030,11 +1031,12 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section2-collapse2" aria-expanded="false"
-                                        aria-controls="section2-collapse2" style="cursor:pointer;">
+                                        aria-controls="section2-collapse2" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             How do I prepare my children in case of COVID-19 outbreak in our community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
                                     <div id="section2-collapse2" class="collapse" data-parent="#section2">
                                         <div class="card-body">
@@ -1062,12 +1064,13 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section2-collapse3" aria-expanded="false"
-                                        aria-controls="section2-collapse3" style="cursor:pointer;">
+                                        aria-controls="section2-collapse3" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             What steps should parents take to protect children during a community
                                             outbreak?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
                                     <div id="section2-collapse3" class="collapse" data-parent="#section2">
                                         <div class="card-body">
@@ -1095,11 +1098,12 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section2-collapse4" aria-expanded="false"
-                                        aria-controls="section2-collapse4" style="cursor:pointer;">
+                                        aria-controls="section2-collapse4" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             Will schools be dismissed if there is an outbreak in my community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
                                     <div id="section2-collapse4" class="collapse" data-parent="#section2">
                                         <div class="card-body">
@@ -1127,11 +1131,12 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section2-collapse5" aria-expanded="false"
-                                        aria-controls="section2-collapse5" style="cursor:pointer;">
+                                        aria-controls="section2-collapse5" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             How do I prepare my children in case of COVID-19 outbreak in our community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
                                     <div id="section2-collapse5" class="collapse" data-parent="#section2">
                                         <div class="card-body">
@@ -1161,11 +1166,12 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section3-collapse1" aria-expanded="false"
-                                        aria-controls="section3-collapse1" style="cursor:pointer;">
+                                        aria-controls="section3-collapse1" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="minus">
                                         <button class="btn">
                                             What should I do if there is an outbreak in my community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-dash-circle-fill fs-4 icons"></i>
                                     </div>
                                     <div id="section3-collapse1" class="collapse show" data-parent="#section3">
                                         <div class="card-body">
@@ -1193,11 +1199,12 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section3-collapse2" aria-expanded="false"
-                                        aria-controls="section3-collapse2" style="cursor:pointer;">
+                                        aria-controls="section3-collapse2" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             How do I prepare my children in case of COVID-19 outbreak in our community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
                                     <div id="section3-collapse2" class="collapse" data-parent="#section3">
                                         <div class="card-body">
@@ -1225,12 +1232,13 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section3-collapse3" aria-expanded="false"
-                                        aria-controls="section3-collapse3" style="cursor:pointer;">
+                                        aria-controls="section3-collapse3" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             What steps should parents take to protect children during a community
                                             outbreak?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
                                     <div id="section3-collapse3" class="collapse" data-parent="#section3">
                                         <div class="card-body">
@@ -1260,11 +1268,12 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section4-collapse1" aria-expanded="false"
-                                        aria-controls="section4-collapse1" style="cursor:pointer;">
+                                        aria-controls="section4-collapse1" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="minus">
                                         <button class="btn">
                                             What should I do if there is an outbreak in my community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-dash-circle-fill fs-4 icons"></i>
                                     </div>
                                     <div id="section4-collapse1" class="collapse show" data-parent="#section4">
                                         <div class="card-body">
@@ -1292,11 +1301,12 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section4-collapse2" aria-expanded="false"
-                                        aria-controls="section4-collapse2" style="cursor:pointer;">
+                                        aria-controls="section4-collapse2" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             How do I prepare my children in case of COVID-19 outbreak in our community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
                                     <div id="section4-collapse2" class="collapse" data-parent="#section4">
                                         <div class="card-body">
@@ -1324,12 +1334,13 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section4-collapse3" aria-expanded="false"
-                                        aria-controls="section4-collapse3" style="cursor:pointer;">
+                                        aria-controls="section4-collapse3" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             What steps should parents take to protect children during a community
                                             outbreak?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
                                     <div id="section4-collapse3" class="collapse" data-parent="#section4">
                                         <div class="card-body">
@@ -1357,11 +1368,12 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section4-collapse4" aria-expanded="false"
-                                        aria-controls="section4-collapse4" style="cursor:pointer;">
+                                        aria-controls="section4-collapse4" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             Will schools be dismissed if there is an outbreak in my community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
                                     <div id="section4-collapse4" class="collapse" data-parent="#section4">
                                         <div class="card-body">
@@ -1391,11 +1403,12 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section5-collapse1" aria-expanded="false"
-                                        aria-controls="section5-collapse1" style="cursor:pointer;">
+                                        aria-controls="section5-collapse1" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="minus">
                                         <button class="btn">
                                             What should I do if there is an outbreak in my community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-dash-circle-fill fs-4 icons"></i>
                                     </div>
                                     <div id="section5-collapse1" class="collapse show" data-parent="#section5">
                                         <div class="card-body">
@@ -1423,11 +1436,12 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section5-collapse2" aria-expanded="false"
-                                        aria-controls="section5-collapse2" style="cursor:pointer;">
+                                        aria-controls="section5-collapse2" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             How do I prepare my children in case of COVID-19 outbreak in our community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
                                     <div id="section5-collapse2" class="collapse" data-parent="#section5">
                                         <div class="card-body">
@@ -1457,11 +1471,12 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section6-collapse1" aria-expanded="false"
-                                        aria-controls="section6-collapse1" style="cursor:pointer;">
+                                        aria-controls="section6-collapse1" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="minus">
                                         <button class="btn">
                                             What should I do if there is an outbreak in my community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-dash-circle-fill fs-4 icons"></i>
                                     </div>
                                     <div id="section6-collapse1" class="collapse show" data-parent="#section6">
                                         <div class="card-body">
@@ -1489,11 +1504,12 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section6-collapse2" aria-expanded="false"
-                                        aria-controls="section6-collapse2" style="cursor:pointer;">
+                                        aria-controls="section6-collapse2" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             How do I prepare my children in case of COVID-19 outbreak in our community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
                                     <div id="section6-collapse2" class="collapse" data-parent="#section6">
                                         <div class="card-body">
@@ -1521,12 +1537,13 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section6-collapse3" aria-expanded="false"
-                                        aria-controls="section6-collapse3" style="cursor:pointer;">
+                                        aria-controls="section6-collapse3" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             What steps should parents take to protect children during a community
                                             outbreak?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
                                     <div id="section6-collapse3" class="collapse" data-parent="#section6">
                                         <div class="card-body">
@@ -1554,11 +1571,12 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section6-collapse4" aria-expanded="false"
-                                        aria-controls="section6-collapse4" style="cursor:pointer;">
+                                        aria-controls="section6-collapse4" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             Will schools be dismissed if there is an outbreak in my community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
                                     <div id="section6-collapse4" class="collapse" data-parent="#section6">
                                         <div class="card-body">
@@ -1586,11 +1604,12 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between" data-toggle="collapse"
                                         data-target="#section6-collapse5" aria-expanded="false"
-                                        aria-controls="section6-collapse5" style="cursor:pointer;">
+                                        aria-controls="section6-collapse5" style="cursor:pointer;"
+                                        onclick="toggleIcon(this)" value="plus">
                                         <button class="btn">
                                             How do I prepare my children in case of COVID-19 outbreak in our community?
                                         </button>
-                                        <i class="bi bi-plus-circle fs-4"></i>
+                                        <i class="bi bi-plus-circle fs-4 icons"></i>
                                     </div>
                                     <div id="section6-collapse5" class="collapse" data-parent="#section6">
                                         <div class="card-body">
@@ -1781,7 +1800,6 @@
         <!-- Here is the Footer end -->
     </div>
 
-    <script src="assets/js/js.js"></script>
     <!-- Bootstrap JS CDN -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -1798,6 +1816,45 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+    <script>
+
+        function loadNumber() {
+            let numbers = document.querySelectorAll('.loadNumber');
+            numbers.forEach(number => {
+                let goal = number.textContent;
+                let counter = 0;
+                let interval = setInterval(() => {
+                    if (counter >= goal) {
+                        clearInterval(interval);
+                        number.textContent = goal;
+                    } else {
+                        counter += 3124567;
+                        number.textContent = counter;
+                    }
+                }, 3000 / goal);
+            });
+        }
+
+        function toggleIcon(parent) {
+            icons = parent.parentNode.parentNode.querySelectorAll(".icons");
+            for (i = 0; i < icons.length; i++) {
+                icons[i].classList.add('bi-plus-circle');
+                icons[i].classList.remove('bi-dash-circle-fill');
+                if (parent.getAttribute("value") === "plus")
+                    icons[i].parentElement.setAttribute("value", "plus");
+            }
+            if (parent.getAttribute("value") === "plus") {
+                parent.children[1].classList.remove('bi-plus-circle');
+                parent.children[1].classList.add('bi-dash-circle-fill');
+                parent.setAttribute("value", "minus");
+            }
+            else {
+                parent.children[1].classList.add('bi-plus-circle');
+                parent.children[1].classList.remove('bi-dash-circle-fill');
+                parent.setAttribute("value", "plus");
+            }
+        }
+    </script>
 </body>
 
 </html>
