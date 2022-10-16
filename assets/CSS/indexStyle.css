@@ -10,7 +10,7 @@
 }
 
 .backgroundImage {
-    background-image: url("assets/imgs/shape-a.png");
+    background-image: url("../imgs/shape-a.png");
     background-size: 110%;
 }
 
@@ -25,4 +25,8 @@
     color: #0b5ed7 !important;
     font-weight: bolder;
     border-bottom: 3px solid #0b5ed7;
+}
+
+.bg-grey{
+    background-color: #eee !important;
 }

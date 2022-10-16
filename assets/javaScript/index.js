@@ -8,15 +8,15 @@ function loadNumber() {
                 clearInterval(interval);
                 number.textContent = goal;
             } else {
-                counter += 3124567;
+                counter += 4123567;
                 number.textContent = counter;
             }
-        }, 3000 / goal);
+        }, 5000000000 / goal);
     });
 }
 
 function toggleIcon(parent) {
-    icons = parent.parentNode.parentNode.querySelectorAll(".icons");
+    icons = parent.parentNode.parentNode.querySelectorAll(".icon");
     icons.forEach(icon => {
         icon.classList.add('bi-plus-circle');
         icon.classList.remove('bi-dash-circle-fill');
@@ -32,5 +32,16 @@ function toggleIcon(parent) {
         parent.children[1].classList.add('bi-plus-circle');
         parent.children[1].classList.remove('bi-dash-circle-fill');
         parent.setAttribute("value", "plus");
+    }
+}
+
+function toggleListItem(item) {
+    parentList = item.parentNode.querySelectorAll(".listItem");
+    if (item.classList.contains('bg-grey')) {
+        item.classList.remove('bg-grey');
+    }
+    else {
+        parentList.forEach(listItem => listItem.classList.remove('bg-grey'));
+        item.classList.add('bg-grey');
     }
 }
