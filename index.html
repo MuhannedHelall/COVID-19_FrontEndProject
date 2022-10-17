@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
-<body onload="loadNumber()">
+<body id="body" onload="loadNumber()">
     <!-- Here is the Navbar beginning -->
     <nav id="navScrollSpy" class="navbar navbar-expand-lg sticky-top bg-white">
         <div class="container px-5">
@@ -61,6 +61,13 @@
         </div>
     </nav>
     <!-- Here is the Navbar end -->
+
+    <section class="fixed-bottom">
+        <a href="#body" class="goUp d-none d-flex justify-content-end m-lg-3 m-1" 
+            onmouseenter="showIcon(this)" onmouseleave="blurIcon(this)">
+            <i class="bi bi-box-arrow-up fs-1 opacity-50"></i>
+        </a>
+    </section>
 
     <div data-bs-spy="scroll" data-bs-target="#navScrollSpy" data-bs-root-margin="0px 0px -40%"
         data-bs-smooth-scroll="true" class="scrollspy-example rounded-2" tabindex="0">
@@ -115,15 +122,15 @@
                             <div class="row mt-5">
                                 <div class="col-sm-4 col-12 text-center">
                                     <span class="fs-5 d-block">Lorem, ipsum.</span>
-                                    <span class="fw-bold fs-3 loadNumber">765124839</span>
+                                    <span class="fw-bold fs-3 loadNumber" goal="765124839">0</span>
                                 </div>
                                 <div class="col-sm-4 col-12 text-center">
                                     <span class="fs-5 d-block">Lorem, ipsum.</span>
-                                    <span class="fw-bold fs-3 loadNumber">426197358</span>
+                                    <span class="fw-bold fs-3 loadNumber" goal="426197358">0</span>
                                 </div>
                                 <div class="col-sm-4 col-12 text-center">
                                     <span class="fs-5 d-block">Lorem, ipsum.</span>
-                                    <span class="fw-bold fs-3 loadNumber">639512784</span>
+                                    <span class="fw-bold fs-3 loadNumber" goal="639512784">0</span>
                                 </div>
                             </div>
                             <div class="row mt-5">

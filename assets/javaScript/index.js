@@ -1,7 +1,7 @@
 function loadNumber() {
     let numbers = document.querySelectorAll('.loadNumber');
     numbers.forEach(number => {
-        let goal = number.textContent;
+        let goal = number.getAttribute('goal');
         let counter = 0;
         let interval = setInterval(() => {
             if (counter >= goal) {
@@ -11,7 +11,7 @@ function loadNumber() {
                 counter += 4123567;
                 number.textContent = counter;
             }
-        }, 5000000000 / goal);
+        }, 8000000000 / goal);
     });
 }
 
@@ -44,4 +44,19 @@ function toggleListItem(item) {
         parentList.forEach(listItem => listItem.classList.remove('bg-grey'));
         item.classList.add('bg-grey');
     }
+}
+
+onscroll = () => {
+    if (scrollY >= document.querySelector('#home').offsetTop)
+        document.querySelector('.goUp').classList.remove('d-none');
+    else
+        document.querySelector('.goUp').classList.add('d-none');
+}
+
+function showIcon(icon){
+    icon.children[0].classList.remove('opacity-50');
+}
+
+function blurIcon(icon){
+    icon.children[0].classList.add('opacity-50');
 }
